@@ -1,0 +1,8 @@
+14/3/2022   Medium (600)   Low (1GB)   12   Y   re123b   5.85   dan
+15/3/2022   Medium (600)   Medium (4GB)   12   N   rt124b   7.65   sam t
+15/3/2022   Small  (300)   High (8GB)   1   N   rg126n   9.0   dan
+15/3/2022   Small  (300)   Unlimited   24   Y   rt129b   0.0   das
+21/3/2022   Small  (300)   Unlimited   12   N   re129n   0.0   gjk
+21/3/2022   Small  (300)   Low (1GB)   18   Y   re123b   4.5   dan
+21/3/2022   Large (1200)   Low (1GB)   12   N   et123b   7.65   liam
+21/3/2022   Large (1200)   High (8GB)   24   Y   ty128n   11.25   john

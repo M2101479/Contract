@@ -206,8 +206,8 @@ def new():
     print('         Discounted Monthly Charge:  £' + str(pound))
   else:
     print('                   Monthly Charge:  £' + str(pound))
-  with open ('file',a) as file:
-    file.write(current_day + '\n' + package + '\n' + data + '\n' + period + '\n' + call + '\n' + reference + '\n' + pound + '\n' + name )
+  with open ('I:/Downloads/summary.txt','a') as file:
+    file.write(str(current_day) + '   ' + str(package) + '   ' + str(data) + '   ' + str(period) + '   ' + str(call) + '   ' + str(reference) + '   ' + str(pound) + '   ' + str(name) + '\n' )
     file.close()
   return('')
   
@@ -226,7 +226,19 @@ def summary():
       elif x == 3:
         return('')
     else:
-      return('')
+      break
+  if answers[0] in file.upper():
+    with open ('I:/Downloads/summary.txt','r+') as file:
+      print('There is currently ' + str(len(file.readlines())) + ' contracts' )
+      file.close()
+    with open('I:/Downloads/summary.txt') as file:
+      contents=file.read()
+      count=contents.count('Unlimited')
+      count2=contents.count('High')
+      total=count + count2
+      print('There is ',total,' contracts with either high or unlimted data bundles')
+      #Need to put the lines with large packages into arrays so i cann make average cost
+  return('')
 
 
 def month_sum():
@@ -274,6 +286,7 @@ def find():
     else:
       search=input('Enter text ')
       return ('')
+
 
 loop=True
 while loop == True :
