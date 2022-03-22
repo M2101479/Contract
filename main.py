@@ -215,6 +215,7 @@ def new():
 def summary():
   for x in range(0,4):
     file=input("Would you like the summary of current contracts or the archive ")
+    # i haven't done the archive
     answers=['CURRENT','CURRENT CONTRACTS','CURRENT CONTRACT','ARCHIVE']
     if file.upper() not in answers:
       if x == 0 :
